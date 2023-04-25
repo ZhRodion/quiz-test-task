@@ -1,0 +1,35 @@
+/* body перенос текста / переполнение*/
+body {
+  padding: 0;
+  margin: 0;
+  word-break: break-word;
+  box-sizing: border-box;
+  font-family: 'Onest';
+  font-style: normal;
+  color: #383838;
+}
+/* Скрытые элементы */
+.hidden {
+visibility: hidden;
+margin: 0;
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+white-space: nowrap;
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
+}
+/* Отмена стилей кнопок */
+button {
+  border: 0;
+}
+/* Отмена стандартных стилей заголовков и текста*/
+h1, h2, h3, p {
+  padding: 0;
+  margin: 0;
+  display: block;
+}

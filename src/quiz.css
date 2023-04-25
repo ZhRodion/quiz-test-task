@@ -1,0 +1,105 @@
+/* Общие стили блока */
+.quiz {
+  width: 1216px;
+  height: 456px;
+  padding: 32px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: #CAFFA0;
+  border-radius: 24px;
+  display: flex;
+}
+.quiz__title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.12;
+}
+.quiz__subtitle {
+  padding: 16px 0 0;
+  font-size: 16px;
+  line-height: 1.25;
+  opacity: 0.7;
+}
+.quiz__image {
+  padding: 81px 0 0;
+}
+/* Картинка и текст */
+.description-container {
+  display: flex;
+  flex-direction: column;
+}
+/* Форма с шагами */
+.quiz-form {
+  width: 576px;
+  height: 392px;
+  margin-left: auto;
+  padding: 32px;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  border-radius: 24px;
+}
+/* Текст внутри формы */
+.text-group {
+max-width: 100%;
+display: flex;
+justify-content: space-between
+}
+/* Выбор в шагах */
+.step-choise {
+padding: 24px 0 0;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 8px;
+}
+/* Инпуты */
+.step-choise__description {
+  padding: 18px;
+  background-color: #F5F5F5;
+  border-radius: 16px;
+}
+.step-choise__check {
+  margin: 0;
+}
+/* Кнопки */
+.buttons {
+  padding: 0;
+  margin: 56px 0 0 ;
+  display: flex;
+  justify-content: space-between;
+}
+.first-button {
+  justify-content: end;
+}
+.buttons__previous {
+  min-width: 108px;
+  padding: 12px 20px 12px 16px;
+  border: 1px solid #D8D8D8;
+  border-radius: 12px;
+}
+/* Стрелка */
+.buttons__previous::before {
+  content: "";
+  border: 1px solid #383838;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 4px;
+  transform: rotate(132deg);
+  margin-right: 4px;
+}
+.buttons__next {
+  min-width: 108px;
+  padding: 12px 16px 12px 20px;
+  background: #383838;
+  border-radius: 12px;
+  color: #FFFFFF;
+}
+/* Стрелка */
+.buttons__next::after {
+  content: "";
+  border: 1px solid #ffffff;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 4px;
+  transform: rotate(-46deg);
+  margin-left: 4px;
+}
